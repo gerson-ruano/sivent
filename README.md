@@ -1,2 +1,2 @@
 # Sivent
- Punto de venta con PHP, jQuery y Bootstrap. Gratis y open source
+ Sistema de Punto de venta con PHP, jQuery y Bootstrap. open source adaptandolo para un comercio local.
