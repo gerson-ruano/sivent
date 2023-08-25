@@ -35,8 +35,14 @@ if (!isset($_SESSION)) exit("<script>window.location.href = '../';</script>");
                     </ul> 
                 </li>
                 
-            <a class="navbar-brand" href="#" id=""><?php echo date("F j, g:i a") ?></a>
-            <a class="navbar-brand" href="#" id=""><?php setlocale(LC_TIME, 'de_DE.UTF-8');?></a>
+                <a class="navbar-brand" href="#" id=""><?php echo date("F j "); ?></a>
+                <!--a class="navbar-brand" href="#" id=""><?php setlocale(LC_TIME, 'de_DE.UTF-8'); ?></a-->
+                <a class="navbar-brand" href="#" id=""><?php date_default_timezone_set('America/Guatemala');
+                    // Obtener la hora actual en horario guatemalteco
+                    $horaGuatemala = date("g:i a"); echo$horaGuatemala; ?>
+                </a>
+                
+
             <ul class="nav navbar-nav navbar-right">
                 <li id="elem_ajustes" class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog"></i> Ajustes <span class="caret"></span></a>
